@@ -1,0 +1,82 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jest/recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "module": true,
+      "arrowFunctions": true,
+      "classes": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "jest"
+  ],
+  "rules": {
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "no-useless-escape": "off",
+    "array-bracket-newline": ["error", "consistent"],
+    "eol-last": ["error", "always"],
+    "no-duplicate-imports": "error",
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "never"],
+    "no-multi-spaces": "error",
+    "arrow-spacing": "error",
+    "arrow-body-style": ["error", "as-needed"],
+    "react/prop-types": ["warn"],
+    "react/display-name": ["off", { "ignoreTranspilerName": false }],
+    "no-console": ["error", { "allow": ["error"] }],
+    "curly": "warn",
+    "comma-dangle": ["error", "always-multiline"],
+    "semi": ["error", "always"],
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "quote-props": ["error", "always"],
+    "jsx-quotes": ["error", "prefer-double"],
+    "indent": ["error", 2, {
+      "SwitchCase": 1,
+      "VariableDeclarator": "first",
+      "ArrayExpression": 1,
+      "ObjectExpression": 1,
+      "ImportDeclaration": 1
+    }],
+    "react/sort-comp": [1, {
+      "order": [
+        "static-methods",
+        "lifecycle",
+        "/^on.+$/",
+        "everything-else",
+        "render"
+      ]
+    }],
+    "no-var": "error",
+    "prefer-const": ["error", {"destructuring": "any"}],
+    "no-const-assign": "error",
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "space-before-function-paren": ["error", {"anonymous": "always", "named": "never", "asyncArrow": "always"}],
+    "semi-spacing": "error",
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "space-infix-ops": "error",
+    "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 4 }],
+    "no-whitespace-before-property": "error",
+    "padded-blocks": ["error", "never"],
+    "space-in-parens": ["error", "never"],
+    "prefer-template": "error",
+    "template-curly-spacing": "error"
+  }
+}

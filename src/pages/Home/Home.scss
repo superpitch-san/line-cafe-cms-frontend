@@ -1,0 +1,79 @@
+@import '../../common/commonConstant.scss';
+
+.Home {
+  .add-remove-box {
+    margin: 10px 0px 0px 5px;
+  }
+  .btn-add-remove-align {
+    text-align: left;
+  }
+  .home-header {
+    margin-top: 10px;
+  }
+  .scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  
+    .card {
+      max-width: 175px !important;
+      margin: 10px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+  }
+  .add-product-box {
+    max-width: 400px;
+    border: 1px solid #f3f3f3;
+    padding: 25px;
+    text-align: left;
+  }
+  .home-box {
+    margin: 10px 20px;
+    border: 1px solid #916B64;
+    border-radius: 10px;
+    min-height: 500px;
+  }
+  .edit-box {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #916B64;
+    border-radius: 10px;
+    .edit-sub-box {
+      justify-content: space-around;
+    }
+  }
+  .img-preview {
+    width: 300px;
+  }
+  .btn-color-brown {
+    color: #ffffff;
+    background: #916B64;
+  }
+  .close-btn {
+    position: absolute;
+    width: 19px;
+    top: -5px;
+    right: -5px;
+  }
+  .warning-message {
+    font-size: 12px;
+    color: #ff0000;
+  }
+  .success-message {
+    font-size: 12px;
+    color: #008000;
+  }
+  .card-username {
+    text-overflow: ellipsis;
+  }
+  .no-data-message {
+    width: 100%;
+    font-size: 50px;
+    color: #c4c4c4;
+    margin-top: 50px;
+  }
+  .card-title {
+    color: #00b900;
+  }
+}

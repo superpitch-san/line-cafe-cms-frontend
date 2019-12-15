@@ -1,0 +1,26 @@
+version: "3.4"
+services: 
+  admin-cms:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: builder
+    container_name: admin-cms
+    command: sh  -c 'npm start'
+    working_dir: /app/admin-cms
+    volumes:
+      - .:/app/admin-cms
+      - /app/admin-cms/node_modules
+    ports:
+      - '3000:3000'
+    restart: 'always'
+    environment:
+      - SASS_PATH=node_modules:src
+      - REACT_APP_DOMAIN_SAMPLE_API=https://jsonplaceholder.typicode.com
+      - REACT_APP_DOMAIN_COOKIE=localhost
+      - REACT_APP_BACKEND_API=http://localhost:3030
+      - REACT_APP_FCM_SENDER_ID=
+      - REACT_APP_FCM_PROJECT_ID=
+      - REACT_APP_FCM_API_KEY=
+      - REACT_APP_FCM_API_ID=
+      - REACT_APP_FCM_WEB_PUSH_CERT=
