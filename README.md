@@ -9,7 +9,7 @@ Installation Project:
  - pull project on your machine.
  - copy ENV variables, credentials from my text attach file to docker-compose.yml in environment section and save file.
  - open terminal and cd path of project.
- - run command ' docker-compose up -d ' and waiting about 3 - 5 mins for build and run project in first time.
+ - run command ' docker-compose up -d ' and waiting about 3 - 5 mins for build and run project in first time.  (you can check docker logs by command 'docker logs [IMAGE ID]' )
  - open https://localhost:3000 on your browser (Google Chrome, Firefox because support Firebase SDK)
  - allow notification for incomming order (will display notification when not focus page)
  - when you upload image file for create product, 
